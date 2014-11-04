@@ -7,11 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Bienvenue sur MARGO</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <?php
-         echo "coucou";
-        ?>
+        <label>Login</label><input>
+        <label>Mot de passe</label><input type="password">
     </body>
 </html>
