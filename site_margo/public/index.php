@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Bienvenue sur MARGO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../js/verif.js"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <label>Login</label><input>
-        <label>Mot de passe</label><input type="password">
+        <form action="../apres.php" name ="formloginMdp">
+            login <input type="text" id="txtLogin">
+            mot de passe <input type="password" id="pwdMdp">
+            <input type="button" value="Vérifier" id="btnVerif">
+        </form>
     </body>
 </html>
