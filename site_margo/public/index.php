@@ -4,13 +4,42 @@
         <title>Bienvenue sur MARGO</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="../js/verif.js"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <form action="../apres.php" name ="formloginMdp">
-            login <input type="text" id="txtLogin">
-            mot de passe <input type="password" id="pwdMdp">
-            <input type="button" value="Vérifier" id="btnVerif">
-        </form>
+        <header>
+            <div class="logo">
+                <h2>Margo</h2>
+            </div>
+            <div class="espace">
+                <div class="titre">
+                    <h2>Espace Enseignants</h2>
+                </div>
+                <div class="compte">
+                    <a href="#"><span>Mon compte</span></a>
+                    <a href="#"><span>Deconnexion</span></a>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <h4>Menu principal</h4>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Enseignement</a></li>
+                <li><a href="#">Filières</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Élèves</a></li>
+            <ul>
+        </aside>
+        <section>
+            <h1>Connexion</h1>
+            <form action="../apres.php" name ="formloginMdp">
+                <div align="center">
+                    <p><label>login</label><input type="text" id="txtLogin"></p>
+                    <p><label>mot de passe</label><input type="password" id="pwdMdp"></p>
+                    <input type="button" value="Vérifier" id="btnVerif" style="margin-left: 240px;width: 70px;">
+                </div>
+            </form>
+        </section>
     </body>
 </html>
