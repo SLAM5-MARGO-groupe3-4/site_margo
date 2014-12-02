@@ -15,11 +15,8 @@
                 <div class="titre">
                     <h2>Bienvenue sur MARGO</h2>
                 </div>
-                <div class="compte">
-                    <a href="#"><span>Mon compte</span></a>
-                    <a href="deconnexion.php"><span>Deconnexion</span></a>
-                </div>
-            </div>-->
+               
+            </div>
         </header>
         <aside>
         </aside>
