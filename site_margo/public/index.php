@@ -17,7 +17,7 @@
                 </div>
                 <div class="compte">
                     <a href="#"><span>Mon compte</span></a>
-                    <a href="deconnection.php"><span>Deconnexion</span></a>
+                    <a href="deconnexion.php"><span>Deconnexion</span></a>
                 </div>
             </div>-->
         </header>
@@ -40,7 +40,7 @@
             </form>
         </section>
         <footer>
-            <p>LAURENT-LEROUX-NOULET-URBAIN</p>
+            <p>LAURENT - LE ROUX - NOULET - URBAIN</p>
             <p>Copyright 2014-2015</p>
         </footer>
     </body>

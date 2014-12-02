@@ -1,5 +1,5 @@
 <?php
-//require_once('head.php');
-echo 'coucou';
-var_dump($_SESSION['login']);
+session_start();
+require_once('include/head.php');
+var_dump($_SESSION);
 ?>
