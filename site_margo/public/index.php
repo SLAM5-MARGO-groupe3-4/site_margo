@@ -5,8 +5,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="../css/style.css">
         
-        
-        
     </head>
     <body>
         <header>
@@ -19,7 +17,7 @@
                 </div>
                 <div class="compte">
                     <a href="#"><span>Mon compte</span></a>
-                    <a href="#"><span>Deconnexion</span></a>
+                    <a href="deconnection.php"><span>Deconnexion</span></a>
                 </div>
             </div>
         </header>

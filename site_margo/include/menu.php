@@ -1,8 +1,7 @@
 <?php
-
-$niv = $_SESSION['niveauAcces'];
-
-function menu($niv) {
+//function menu($niv) {
+    
+    $niv = $_SESSION['niveauAcces'];
     
     $accueil = '<a href="../accueil.php" > Accueil </a>';
     $edt = '<a href="" > Emploi du temps </a>';
@@ -31,6 +30,6 @@ function menu($niv) {
             echo 'Il y a un problème avec votre compte, merci de contacter l\'<a href="mailto:toto@gmail.com?subject=PbNivAcces">administrateur</a>';            
     }
     
-}
+//}
 
 ?>
