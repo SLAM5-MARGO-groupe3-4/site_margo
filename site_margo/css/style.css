@@ -40,7 +40,7 @@ header .espace .compte{
 /* ASIDE */
 
 aside{
-	height:707px;
+	height:677px;
 	width:250px;
 	background-color: #2c3638;
 	float:left;
@@ -50,7 +50,7 @@ aside{
 
 section{
 	background-color: #f1f1f1;
-	height:707px;
+	height:723px;
 }
 
 section input{
@@ -75,6 +75,7 @@ section button{
 /* FOOTER */
 footer{
 	background-color:#e1e1e1;
-	height:46px;
+	height:55px;
 	text-align: center;
+        margin-top: -16px;
 }

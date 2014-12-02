@@ -3,7 +3,6 @@
     <head>
         <title>Bienvenue sur MARGO</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!--<script type="text/javascript" src="../js/verif.js"></script>-->
         <link type="text/css" rel="stylesheet" href="../css/style.css">
         
         
@@ -24,26 +23,11 @@
                 </div>
             </div>
         </header>
-        <!--<aside>
-            <h4>Menu principal</h4>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Enseignement</a></li>
-                <li><a href="#">Filières</a></li>
-                <li><a href="#">Classes</a></li>
-                <li><a href="#">Élèves</a></li>
-            <ul>
-        </aside>-->
+        <aside>
+        </aside>
         <section>
             <h1>Connexion</h1>
-            <!--<form action="#" name ="formloginMdp" method="post">
-                <div align="center">
-                    <p><label>login</label><input type="text" id="txtLogin"></p>
-                    <p><label>mot de passe</label><input type="password" id="pwdMdp"></p>
-                    <input type="sumbit" value="Vérifier" id="btnVerif" style="margin-left: 240px;width: 70px;" >
-                </div>
-            </form>-->
-             <form action="../session.php" name ="formloginMdp" method="post">
+            <form action="../session.php" name ="formloginMdp" method="post">
                 <div align="center">
                     <p>
                         <label>login</label>
@@ -53,10 +37,13 @@
                         <label>mot de passe</label>
                         <input type="password" id="pwdMdp" name='pwd'>
                     </p>
-                    <!--<button type="submit" value="Vérifier" id="btnVerif" style="margin-left: 240px;width: 70px;">-->
-                     <input id="btnVerif" type="submit" value="Vérifier" style="margin-left: 240px;width: 70px;">
+                    <input id="btnVerif" type="submit" value="Vérifier" style="margin-left: 240px;width: 70px;">
                 </div>
             </form>
         </section>
+        <footer>
+            <p>LAURENT-LEROUX-NOULET-URBAIN</p>
+            <p>Copyright 2014-2015</p>
+        </footer>
     </body>
 </html>
