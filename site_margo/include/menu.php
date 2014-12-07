@@ -24,28 +24,25 @@ switch ($niv) {
         echo $deco .'<br />';
         break;
     case 2 : // Professeurs
-        echo $accueil;
-        echo $edt;
-        echo $bul;
-        echo $compte;
-        echo $deco;
+        echo $accueil.'<br>';
+        echo $edt.'<br>';
+        echo $bul.'<br>';
+        echo $compte.'<br>';
+        echo $deco.'<br>';
         break;
     case 3 : //Techniciens
-        echo $accueil;
-        echo $edt;
-        echo $compte;
-        echo $deco;
+        echo $accueil.'<br>';
+        echo $edt.'<br>';
+        echo $compte.'<br>';
+        echo $deco.'<br>';
         break;
     case 4 : //Admin
-        echo $accueil;
-        echo $edt;
-        echo $bul;
-        echo $compte;
-        echo $deco;
+        echo $accueil.'<br>';
+        echo $edt.'<br>';
+        echo $bul.'<br>';
+        echo $compte.'<br>';
+        echo $deco.'<br>';
         break;
     default : //si lolo a pas fait son taff
         echo 'Il y a un problème avec votre compte, merci de contacter l\'<a href="mailto:toto@gmail.com?subject=PbNivAcces">administrateur</a>';
 }
-
-//}
-?>
