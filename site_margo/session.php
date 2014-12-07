@@ -8,11 +8,11 @@ $mdp = $_POST['pwd'];
 
 $sqlLog = "SELECT id, idRole FROM Personne WHERE login='$log'";
 $rLog = $r = mysql_query($sqlLog, $link);
-$tLog = mysql_fetch_array($r);
+$tLog = mysql_fetch_array($rLog);
 
 $sqlMdp = "SELECT id FROM Personne WHERE mdp='$mdp'";
 $rMdp = $r = mysql_query($sqlMdp, $link);
-$tMdp = mysql_fetch_array($r);
+$tMdp = mysql_fetch_array($rMdp);
 
 if ($tLog != null) {
     if ($tMdp != null) {
