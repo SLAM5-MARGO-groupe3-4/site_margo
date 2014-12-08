@@ -28,7 +28,7 @@ require_once('include/head.php');
         </aside>
         <section>
             <h1>Accueil</h1>
-            <h2>Depuis ce site, vous pouvez :<ul><li>Accèder à votre emploi du temps</li><li>Voir votre bulletin</li><li>Accèder et modifier vos informations personnelles</li></ul></h2>
+            <h2>Depuis ce site, vous pouvez :<ul><li>Accèder à votre emploi du temps</li><li>Voir votre bulletin</li><li>Voir et modifier vos informations personnelles</li></ul></h2>
         </section>
         <footer>
             <p>LAURENT - LE ROUX - NOULET - URBAIN | Copyright 2014-2015</p>
