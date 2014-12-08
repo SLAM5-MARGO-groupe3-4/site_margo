@@ -101,3 +101,30 @@ a{
 a:active{
     color:green
 }
+
+
+/* Tableau Emploi du temps*/
+#idTableEDT{
+    text-align: center;
+    margin:auto;
+    font-size: 30px;
+    font-family: Arial;
+    width : 84%;
+}
+
+#idTableEDT th {
+    width : 100px;
+}
+#idTableEDT tr {
+    padding:0;
+}
+table tr:nth-child(odd){
+    /*background-color: #f0f0f0;*/
+    color: black;
+    background-color: white;
+}
+
+table tr {
+    color : white;
+    background-color: black;
+}
