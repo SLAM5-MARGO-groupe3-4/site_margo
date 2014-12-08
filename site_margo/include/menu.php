@@ -6,11 +6,11 @@
 
 $niv = $_SESSION['niveauAcces'];
 
-$accueil = '<a href="accueil.php" > Accueil </a>';
-$edt = '<a href="emploiDuTemps.php" > Emploi du temps </a>';
-$bul = '<a href="" > Bulletin </a>';
-$compte = '<a href="compte.php" > Compte </a>';
-$deco = '<a href="deconnexion.php" > Déconnexion </a>';
+$accueil = '<ul><li><a href="accueil.php" > Accueil </a></li>';
+$edt = '<li><a href="emploiDuTemps.php" > Emploi du temps </a></li>';
+$bul = '<li><a href="" > Bulletin </a></li>';
+$compte = '<li><a href="compte.php" > Compte </a></li>';
+$deco = '<li><a href="deconnexion.php" > Déconnexion </a></li></ul>';
 
 switch ($niv) {
     case 1 : // Etudiants
