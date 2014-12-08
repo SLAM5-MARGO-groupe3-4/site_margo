@@ -146,7 +146,7 @@ a, a:active{
     text-decoration: none;
     font-size: 20;
 }
-a:active{
+a:active, a:hover{
     color:green;
 }
 
