@@ -1,3 +1,42 @@
+@font-face {
+    font-family:'Bootstrap';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/glyphicons-halflings-regular.svg') format('svg'),
+        url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+
+.home:before{
+    font-family: 'Bootstrap';
+    content:"\e021";
+    padding-right: 10px;
+}
+
+.calendar:before{
+    font-family: 'Bootstrap';
+    content:"\e109";
+    padding-right: 10px;
+}
+
+.list:before{
+    font-family: 'Bootstrap';
+    content:"\e032";
+    padding-right: 10px;
+}
+
+.user:before{
+    font-family: 'Bootstrap';
+    content:"\e008";
+    padding-right: 10px;
+}
+
+.off:before{
+    font-family: 'Bootstrap';
+    content:"\e017";
+    padding-right: 10px;
+}
+
 body{
     margin:0px;
     background:#fff;
@@ -20,8 +59,8 @@ header .logo h2{
     margin: 0;
     color:#fff;
     font-size: 53px;
-    
-    
+
+
 }
 
 header .espace{
@@ -108,7 +147,13 @@ a, a:active{
     font-size: 20;
 }
 a:active{
-    color:green
+    color:green;
+}
+
+/*Menu*/
+.menu{
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
 
