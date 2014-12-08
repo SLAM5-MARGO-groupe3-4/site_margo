@@ -2,7 +2,6 @@
 include('include/head.php');
 $espace = "Modification du compte";
 
-//nom, prenom, mdp, mail, 
 $func = $_GET["func"];
 
 if($func=="modification"){
