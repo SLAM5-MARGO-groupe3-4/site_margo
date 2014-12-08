@@ -6,7 +6,7 @@
 
 $niv = $_SESSION['niveauAcces'];
 
-$accueil = '<a href="../accueil.php" > Accueil </a>';
+$accueil = '<a href="accueil.php" > Accueil </a>';
 $edt = '<a href="emploiDuTemps.php" > Emploi du temps </a>';
 $bul = '<a href="" > Bulletin </a>';
 $compte = '<a href="compte.php" > Compte </a>';
