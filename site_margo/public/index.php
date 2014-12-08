@@ -2,20 +2,15 @@
 <html>
     <head>
         <title>Bienvenue sur MARGO</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8" >
+        <script type="text/javascript" src="../js/verif.js"></script>
         <link type="text/css" rel="stylesheet" href="../css/style.css">
-        
     </head>
     <body>
         <header>
-            <div class="logo">
-                <h2>Margo</h2>
-            </div>
-            <div class="espace">
-                <div class="titre">
-                    <h2>Bienvenue sur MARGO</h2>
-                </div>
-            </div>
+            <?php
+            require_once('../include/header.php');
+            ?>
         </header>
         <aside>
         </aside>

@@ -8,5 +8,6 @@ $niveauAcces = $_SESSION['niveauAcces'];
 require_once('connexion.php');
 //require_once('fonction.php');
 ?>
-<script type="text/javascript" src="../js/verif.js"></script>
-<link type="text/css" rel="stylesheet" href="../css/style.css">
+<meta charset="utf-8" >
+<script type="text/javascript" src="js/verif.js"></script>
+<link type="text/css" rel="stylesheet" href="css/style.css">

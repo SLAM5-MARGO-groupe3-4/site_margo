@@ -34,7 +34,6 @@ if ($tLog != null) {
         }
     } else {
         echo 'Le mot de passe n\'est pas le bon';
-        //include('public/index.php');
         header('Location:public/index.php');
     }
 } else {
