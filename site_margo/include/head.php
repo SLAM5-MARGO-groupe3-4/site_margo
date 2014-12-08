@@ -4,7 +4,7 @@ $login = $_SESSION['login'];
 $id = $_SESSION['id'];
 $niveauAcces = $_SESSION['niveauAcces'];
             
-require_once('menu.php');
+
 require_once('connexion.php');
 //require_once('fonction.php');
 ?>
