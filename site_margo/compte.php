@@ -7,9 +7,39 @@ if(isset($_GET["func"])){
     if($func=="modification"){
         $nom = $_POST["idNom"];
         $prenom = $_POST["idPrenom"];
-
-        $sqlUpdate = "UPDATE Personne SET nom='".$nom."', prenom='".$prenom."' WHERE  id=".$id;
-        $r = mysql_db_query($cfgBase, $sqlUpdate);
+        $situation = $_POST["idSituation"];
+        $adr = $_POST["idAdr"];
+        $mail = $_POST["idMail"];
+        $login = $_POST["idLogin"];
+        $mdp = $_POST["idMdp"];
+        $confMdp = $_POST["idConfMdp"];
+        
+        if(!is_empty($nom)){
+            if(!is_empty($prenom)){
+                if(!is_empty($adr)){
+                    if(!is_empty($mail) && filter_var($mail, FILTER_VALIDATE_EMAIL)){
+                        if(!is_empty($login)){
+                            if(!is_empty($mdp) && $mdp == $confMdp){
+                                $sqlUpdate = "UPDATE Personne SET nom='".$nom."', prenom='".$prenom."' WHERE  id=".$id;
+                                $r = mysql_db_query($cfgBase, $sqlUpdate);
+                            } else{
+                                echo "Modification impossible, le <strong>mot de passe</strong> ne doit pas être vide";
+                            }
+                        } else{
+                            echo "Modification impossible, le <strong>login</strong> ne doit pas être vide";
+                        }
+                    } else{
+                        echo "Modification impossible, l'<strong>adresse e-mail</strong> ne doit pas être vide";
+                    }
+                } else{
+                    echo "Modification impossible, l'<strong>adresse</strong> ne doit pas être vide";
+                }
+            } else{
+                echo "Modification impossible, le <strong>prénom</strong> ne doit pas être vide";
+            }
+        } else{
+            echo "Modification impossible, le <strong>nom</strong> ne doit pas être vide";
+        }
     }
 }
 
@@ -43,7 +73,7 @@ $t = mysql_fetch_array($r);
         </aside>
         <section>
             <h1>Votre Compte</h1>
-            <form actionion="?func=modification" name ="formCompte" method="post">
+            <form action="?func=modification" name ="formCompte" method="post">
                 <div align="center">
                     <p>
                         <label>Nom : </label>
@@ -60,6 +90,10 @@ $t = mysql_fetch_array($r);
                     <p>
                         <label>Adresse :</label>
                         <input type="text" id="idAdr" name="idAdr" value="<?php //echo $t["adr"]; ?>">
+                    </p>
+                    <p>
+                        <label>Adresse Mail :</label>
+                        <input type="text" id="idMail" name="idMail" value="<?php //echo $t["adr"]; ?>">
                     </p>
                     <p>
                         <label>Login :</label>
