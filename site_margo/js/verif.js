@@ -14,7 +14,6 @@ window.onload = function() {
             return false;
         }
         if (ok === 1) {
-            alert("dedans");
             formloginMdp.submit();
         }
         formloginMdp.submit();
