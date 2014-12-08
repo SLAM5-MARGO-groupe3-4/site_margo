@@ -17,7 +17,11 @@ header .logo{
     height:inherit;
 }
 header .logo h2{
+    margin: 0;
     color:#fff;
+    font-size: 53px;
+    
+    
 }
 
 header .espace{
@@ -98,9 +102,10 @@ footer{
 
 /*Liens*/
 
-a{
+a, a:active{
     color:white;
-    text-decoration: none
+    text-decoration: none;
+    font-size: 20;
 }
 a:active{
     color:green
