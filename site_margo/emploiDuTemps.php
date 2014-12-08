@@ -42,7 +42,7 @@ $tabHeures = array("8h-8h55", "8h55-9h", "9h-9h50", "10h05-11h", "11h-11h55", "1
         </aside>
         <section> 
             <?php
-            echo '<table id="idTableEDT">';
+            echo '<table id="idTableEDT" border="1">';
             echo '<th></th>';
             for ($i = 0; $i < count($tabJours); $i++) {
                 echo '<th>' . $tabJours[$i] . '</th>';
@@ -52,7 +52,7 @@ $tabHeures = array("8h-8h55", "8h55-9h", "9h-9h50", "10h05-11h", "11h-11h55", "1
                 echo '<tr>';
                 echo '<td>' . $tabHeures[$j] . '</td>';
                 for ($i = 0; $i < count($tabJours); $i++) {
-                    echo '<td>' . '' . '</td>';
+                    echo '<td>' . 't' . '</td>';
                 }
                 echo'</tr>';
             }
