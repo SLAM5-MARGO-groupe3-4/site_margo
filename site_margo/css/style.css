@@ -39,6 +39,10 @@ header .espace .compte{
     float:right;
 }
 
+header .titre{
+    margin-left: 20px;
+}
+
 /* ASIDE */
 
 aside{
