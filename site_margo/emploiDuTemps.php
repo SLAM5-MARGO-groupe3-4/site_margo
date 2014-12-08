@@ -4,6 +4,8 @@ include('include/head.php');
 $tabJours = array("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi");
 $tabHeures = array("8h-8h55", "8h55-9h", "9h-9h50", "10h05-11h", "11h-11h55", "11h55-12h50", "13h10-14h05", '14h05-15h', "15h15-16h10", "16h10-17h05", "17h05-18h");
 
+$espace='Emploi du temps';
+
 /* echo '<table border="1">';
   echo '<th></th>';
   for ($i=0;$i<count($tabJours);$i++){
@@ -23,7 +25,7 @@ $tabHeures = array("8h-8h55", "8h55-9h", "9h-9h50", "10h05-11h", "11h-11h55", "1
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Emploi du temps</title>
+        <title><?php echo $espace ?></title>
         <link type="text/css" rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -33,7 +35,7 @@ $tabHeures = array("8h-8h55", "8h55-9h", "9h-9h50", "10h05-11h", "11h-11h55", "1
             </div>
             <div class="espace">
                 <div class="titre">
-                    <h2>Bienvenue sur MARGO</h2>
+                    <h2><?php echo $espace ?></h2>
                 </div>
             </div>
         </header>
