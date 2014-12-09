@@ -7,38 +7,37 @@ $niv = $_SESSION['niveauAcces'];
 
 $accueil = '<div class="menu"><a href="accueil.php" class="home"> Accueil </a></br>';
 $edt = '<a href="emploiDuTemps.php" class="calendar"> Emploi du temps </a></br>';
-$bul = '<a href="" class="list"> Bulletin </a></br>';
+$pers = '<a href="presonne.php" class="calendar"> Personne </a></br>';
 $compte = '<a href="compte.php" class="user"> Compte </a></br>';
 $deco = '<a href="include/deconnexion.php" class="off"> Déconnexion </a></br></div>';
 
 switch ($niv) {
-    case 1 : // Etudiants
+    case 1 : // Admin
         //Accueil
         echo $accueil . '<br />';
         // emploi du temps
         echo $edt . '<br />';
-        // bulletin
-        echo $bul . '<br />';
+        echo $pers . '<br>';
         echo $compte . '<br />';
         echo $deco . '<br />';
         break;
     case 2 : // Professeurs
         echo $accueil . '<br>';
         echo $edt . '<br>';
-        echo $bul . '<br>';
+        echo $pers . '<br>';
         echo $compte . '<br>';
         echo $deco . '<br>';
         break;
     case 3 : //Techniciens
         echo $accueil . '<br>';
         echo $edt . '<br>';
+        echo $pers . '<br>';
         echo $compte . '<br>';
         echo $deco . '<br>';
         break;
-    case 4 : //Admin
+    case 4 : //Etudiants
         echo $accueil . '<br>';
         echo $edt . '<br>';
-        echo $bul . '<br>';
         echo $compte . '<br>';
         echo $deco . '<br>';
         break;

@@ -19,11 +19,6 @@
     padding-right: 10px;
 }
 
-.list:before{
-    font-family: 'Bootstrap';
-    content:"\e032";
-    padding-right: 10px;
-}
 
 .user:before{
     font-family: 'Bootstrap';
