@@ -19,11 +19,11 @@
             <form action="../session.php" name ="formloginMdp" method="post">
                 <div align="center">
                     <p>
-                        <label>login</label>
+                        <label>Login</label>
                         <input type="text" id="txtLogin" name='login'>
                     </p>
                     <p>
-                        <label>mot de passe</label>
+                        <label>Mot de passe</label>
                         <input type="password" id="pwdMdp" name='pwd'>
                     </p>
                     <input id="btnVerif" type="submit" value="Vérifier" style="margin-left: 240px;width: 70px;">
