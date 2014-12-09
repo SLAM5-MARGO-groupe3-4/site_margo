@@ -35,9 +35,10 @@ $nomColonne = array("Nom", "Prenom");
                     <label>Selectionner une catégorie :</label>
                     <select name="typeSelect">
                         <option value="etudiant">Etudiant</option>
-                        <option value="prof">Professeur</option>
-                        <option value="tech">Technicien</option>
-                        <option value="admi">Administration</option>
+                        <option value="professeur">Professeur</option>
+                        <option value="technicien">Technicien</option>
+                        <option value="personnel">Personnel</option>
+                        <option value="admin">Administration</option>
                     </select>
                     </br>
                     <input id="btnAfficher" type="submit" value="Afficher" style="margin-left: 240px;width: 70px;">
@@ -48,7 +49,7 @@ $nomColonne = array("Nom", "Prenom");
         <section>
             <?php
             $personne = $_POST["typeSelect"];
-            $sql = "SELECT NOM, PRENOM FROM PERSONNE WHERE IDROLE IN (SELECT IDROLE FROM ROLE WHERE LIBELLE = " . $personne . ")";
+            $sql = 'SELECT NOM, PRENOM FROM PERSONNE WHERE IDROLE IN (SELECT IDROLE FROM ROLE WHERE LIBELLE = ' . $personne . ')';
             $r = mysql_query($sql, $link);
             $t = mysql_fetch_array($r);
 
