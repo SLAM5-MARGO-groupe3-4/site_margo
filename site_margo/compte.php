@@ -43,7 +43,7 @@ if(isset($_GET["func"])){
     }
 }
 
-$sql = "SELECT * FROM Personne WHERE id =" . $id;
+$sql = "SELECT * FROM PERSONNE WHERE IDPERS =" . $id;
 $r = mysql_query($sql, $link);
 $t = mysql_fetch_array($r);
 ?>
@@ -77,31 +77,31 @@ $t = mysql_fetch_array($r);
                 <div align="center">
                     <p>
                         <label>Nom : </label>
-                        <input type="text" id="idNom" name="idNom" value="<?php echo $t["nom"]; ?>">
+                        <input type="text" id="idNom" name="idNom" value="<?php echo $t["NOM"]; ?>">
                     </p>
                     <p>
                         <label>Prenom :</label>
-                        <input type="text" id="idPrenom" name="idPrenom" value="<?php echo $t["prenom"]; ?>">
+                        <input type="text" id="idPrenom" name="idPrenom" value="<?php echo $t["PRENOM"]; ?>">
                     </p>
                     <p>
                         <label>Situation Familliale :</label>
-                        <input type="text" id="idSituation" name="idSituation" value="<?php //echo $t["situation"]; ?>">
+                        <input type="text" id="idSituation" name="idSituation" value="<?php echo $t["SITUATION"]; ?>">
                     </p>
                     <p>
                         <label>Adresse :</label>
-                        <input type="text" id="idAdr" name="idAdr" value="<?php //echo $t["adr"]; ?>">
+                        <input type="text" id="idAdr" name="idAdr" value="<?php echo $t["ADR"]; ?>">
                     </p>
                     <p>
                         <label>Adresse Mail :</label>
-                        <input type="text" id="idMail" name="idMail" value="<?php //echo $t["adr"]; ?>">
+                        <input type="text" id="idMail" name="idMail" value="<?php echo $t["ADRESSEMAIL"]; ?>">
                     </p>
                     <p>
                         <label>Login :</label>
-                        <input type="text" id="idLogin" name="idLogin" value="<?php echo $t["login"]; ?>">
+                        <input type="text" id="idLogin" name="idLogin" value="<?php echo $t["LOGIN"]; ?>">
                     </p>
                     <p>
                         <label>Mot de passe :</label>
-                        <input type="password" id="idMdp" name="idMdp" value="<?php echo $t["mdp"]; ?>">
+                        <input type="password" id="idMdp" name="idMdp" value="<?php echo $t["MOTDEPASSE"]; ?>">
                     </p>
                     <p>
                         <label>Confirmation Mot de passe :</label>
@@ -116,6 +116,3 @@ $t = mysql_fetch_array($r);
         </footer>
     </body>
 </html>
-
-
-
