@@ -6,13 +6,13 @@ $tabMat = array();
 
 if ($niveauAcces == 4) {
     $sqlNote = "SELECT * FROM NOTES WHERE IDPERS =" . $id;
-    echo $sqlNote;
     $rNote = mysql_query($sqlNote, $link);
     while ($tNote = mysql_fetch_array($rNote)) {
         $sqlMat = "SELECT * FROM MATIERE WHERE CODEMAT=".$tNote["CODEMAT"];
         $rMat = mysql_query($sqlMat, $link);
         $tMat = mysql_fetch_array($rMat);
         $tabMat[] = $tMat["LIBMAT"];
+        $tabNote[] = $tNote["NOTE"];
     }
 }
 ?>
@@ -44,9 +44,7 @@ if ($niveauAcces == 4) {
             for ($i = 0; $i < count($tabMat); $i++) {
                 echo '<tr>';
                 echo '<td>' . $tabMat[$i] . '</td>';
-                while ($tNote = mysql_fetch_array($rNote)) {
-                    $notes += (string) $tNote['NOTE'];
-                }
+                $notes = (string) $tabNote[$i];
                 echo '<td>' . $notes . '</td>';
                 echo'</tr>';
             }
