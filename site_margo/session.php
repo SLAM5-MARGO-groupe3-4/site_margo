@@ -6,11 +6,12 @@ $log = $_POST['login'];
 $mdp = $_POST['pwd'];
 
 
-$sqlLog = "SELECT id, idRole FROM Personne WHERE login='$log'";
+$sqlLog = "SELECT IDPERS, IDROLE FROM PERSONNE WHERE LOGIN='$log'";
 $rLog = $r = mysql_query($sqlLog, $link);
 $tLog = mysql_fetch_array($rLog);
 
-$sqlMdp = "SELECT id FROM Personne WHERE mdp='$mdp'";
+$sqlMdp = "SELECT IDPERS FROM PERSONNE WHERE MOTDEPASSE='$mdp'";
+echo $sqlMdp;
 $rMdp = $r = mysql_query($sqlMdp, $link);
 $tMdp = mysql_fetch_array($rMdp);
 
@@ -22,8 +23,8 @@ if ($tLog != null) {
 //            define('id', $tLog['id']);
 //            define('niveauAcces', $tLog['idRole']);
             $_SESSION['login'] = $log;
-            $_SESSION['id'] = $tLog['id'];
-            $_SESSION['niveauAcces'] = $tLog['idRole'];
+            $_SESSION['id'] = $tLog['IDPERS'];
+            $_SESSION['niveauAcces'] = $tLog['IDROLE'];
             
             //include('accueil.php');
             header('Location:accueil.php');

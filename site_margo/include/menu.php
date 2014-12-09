@@ -7,8 +7,8 @@ $niv = $_SESSION['niveauAcces'];
 
 $accueil = '<div class="menu"><a href="accueil.php" class="home"> Accueil </a></br>';
 $edt = '<a href="emploiDuTemps.php" class="calendar"> Emploi du temps </a></br>';
-$pers = '<a href="presonne.php" class="calendar"> Personne </a></br>';
 $note = '<a href="note.php" > Notes </a></br>';
+$pers = '<a href="afficherPersonne.php" class="list"> Personne </a></br>';
 $compte = '<a href="compte.php" class="user"> Compte </a></br>';
 $deco = '<a href="include/deconnexion.php" class="off"> Déconnexion </a></br></div>';
 
