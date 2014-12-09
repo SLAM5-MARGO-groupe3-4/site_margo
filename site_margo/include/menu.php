@@ -9,7 +9,7 @@ $accueil = '<div class="menu"><a href="accueil.php" class="home"> Accueil </a></
 $edt = '<a href="emploiDuTemps.php" class="calendar"> Emploi du temps </a></br>';
 $bul = '<a href="" class="list"> Bulletin </a></br>';
 $compte = '<a href="compte.php" class="user"> Compte </a></br>';
-$deco = '<a href="deconnexion.php" class="off"> Déconnexion </a></br></div>';
+$deco = '<a href="include/deconnexion.php" class="off"> Déconnexion </a></br></div>';
 
 switch ($niv) {
     case 1 : // Etudiants
