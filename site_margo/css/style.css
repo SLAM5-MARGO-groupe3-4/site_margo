@@ -37,6 +37,12 @@
     padding-right: 10px;
 }
 
+.note:before{
+    font-family: 'Bootstrap';
+    content:"\270f";
+    padding-right: 10px;
+}
+
 body{
     margin:0px;
     background:#fff;
