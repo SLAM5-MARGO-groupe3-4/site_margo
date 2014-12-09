@@ -14,13 +14,18 @@ if(isset($_GET["func"])){
         $mdp = $_POST["idMdp"];
         $confMdp = $_POST["idConfMdp"];
         
-        if(!is_empty($nom)){
-            if(!is_empty($prenom)){
-                if(!is_empty($adr)){
-                    if(!is_empty($mail) && filter_var($mail, FILTER_VALIDATE_EMAIL)){
-                        if(!is_empty($login)){
-                            if(!is_empty($mdp) && $mdp == $confMdp){
-                                $sqlUpdate = "UPDATE Personne SET nom='".$nom."', prenom='".$prenom."' WHERE  id=".$id;
+        if(!empty($nom)){
+            if(!empty($prenom)){
+                if(!empty($adr)){
+                    if(!empty($mail) && filter_var($mail, FILTER_VALIDATE_EMAIL)){
+                        if(!empty($login)){
+                            if(!empty($mdp) && $mdp == $confMdp){
+                                $sqlUpdate = "UPDATE PERSONNE SET nom='".$nom."', prenom='".$prenom;
+                                if(!empty($situation)){
+                                    $sqlUpdate .= "', situation='".$situation;
+                                }
+                                $sqlUpdate .= "', adr='".$adr."', adressemail='".$mail."', login='".$login.
+                                        "', motdepasse='".$mdp."' WHERE  idPers=".$id;
                                 $r = mysql_db_query($cfgBase, $sqlUpdate);
                             } else{
                                 echo "Modification impossible, le <strong>mot de passe</strong> ne doit pas être vide";
@@ -42,8 +47,7 @@ if(isset($_GET["func"])){
         }
     }
 }
-
-$sql = "SELECT * FROM Personne WHERE id =" . $id;
+$sql = "SELECT * FROM PERSONNE WHERE IDPERS =" . $id;
 $r = mysql_query($sql, $link);
 $t = mysql_fetch_array($r);
 ?>
@@ -77,35 +81,35 @@ $t = mysql_fetch_array($r);
                 <div align="center">
                     <p>
                         <label>Nom : </label>
-                        <input type="text" id="idNom" name="idNom" value="<?php echo $t["nom"]; ?>">
+                        <input type="text" id="idNom" name="idNom" value="<?php echo $t["NOM"]; ?>">
                     </p>
                     <p>
                         <label>Prenom :</label>
-                        <input type="text" id="idPrenom" name="idPrenom" value="<?php echo $t["prenom"]; ?>">
+                        <input type="text" id="idPrenom" name="idPrenom" value="<?php echo $t["PRENOM"]; ?>">
                     </p>
                     <p>
                         <label>Situation Familliale :</label>
-                        <input type="text" id="idSituation" name="idSituation" value="<?php //echo $t["situation"]; ?>">
+                        <input type="text" id="idSituation" name="idSituation" value="<?php echo $t["SITUATION"]; ?>">
                     </p>
                     <p>
                         <label>Adresse :</label>
-                        <input type="text" id="idAdr" name="idAdr" value="<?php //echo $t["adr"]; ?>">
+                        <input type="text" id="idAdr" name="idAdr" value="<?php echo $t["ADR"]; ?>">
                     </p>
                     <p>
                         <label>Adresse Mail :</label>
-                        <input type="text" id="idMail" name="idMail" value="<?php //echo $t["adr"]; ?>">
+                        <input type="text" id="idMail" name="idMail" value="<?php echo $t["ADRESSEMAIL"]; ?>">
                     </p>
                     <p>
                         <label>Login :</label>
-                        <input type="text" id="idLogin" name="idLogin" value="<?php echo $t["login"]; ?>">
+                        <input type="text" id="idLogin" name="idLogin" value="<?php echo $t["LOGIN"]; ?>">
                     </p>
                     <p>
                         <label>Mot de passe :</label>
-                        <input type="password" id="idMdp" name="idMdp" value="<?php echo $t["mdp"]; ?>">
+                        <input type="password" id="idMdp" name="idMdp" value="<?php echo $t["MOTDEPASSE"]; ?>">
                     </p>
                     <p>
                         <label>Confirmation Mot de passe :</label>
-                        <input type="password" id="idConfMdp" name="idConfMdp">
+                        <input type="password" id="idConfMdp" name="idConfMdp"value="<?php echo $t["MOTDEPASSE"]; ?>">
                     </p>
                     <button type="submit"> Modifier</button>
                 </div>
